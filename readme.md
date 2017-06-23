@@ -9,5 +9,3 @@ pull request to branch `v0.1`.
 
 A formatted version of this documentation can be found at
 (laramie.io/docs)[https://laramie.io/docs].
-
-test
