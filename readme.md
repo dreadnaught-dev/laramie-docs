@@ -1,7 +1,5 @@
 # Laramie Documentation
 
----
-
 ## Contributing
 
 Contributions are **welcome**. Well-written, thorough documentation is just as
