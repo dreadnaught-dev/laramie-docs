@@ -1,4 +1,4 @@
-# Laramie Documentation
+# Laramie Documentations
 
 ## Contributing
 
