@@ -30,8 +30,9 @@ We accept contributions via Pull Requests on [Github](https://github.com/laramie
 
 ## Running Tests
 
-```
+``` bash
 $ composer test
 ```
+
 
 **Happy coding**!
