@@ -9,3 +9,6 @@ description: Navigation links
 - [Installation](/docs/{{version}}/installation)
 - [Configuration](/docs/{{version}}/configuration)
 - [Directory Structure](/docs/{{version}}/structure)
+
+## The Basics
+- [Validation](/docs/{{version}}/validation)
