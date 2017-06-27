@@ -12,6 +12,10 @@ Laramie is magical a composer pagckage for [Laravel](https://laravel.com) that i
 composer install laramie-cms/laramie
 ```
 
+Register things with Laravel:
+
+- Add the following to `config/app.php`:
+
 ## Requirements
 
 Laramie is an amazing CMS-granting package _for_ Laravel... so Laravel is a requirement (see [Laravel's documentation](https://laravel.docm/docs/installation) for instructions on how to install Laravel).
