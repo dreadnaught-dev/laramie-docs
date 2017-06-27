@@ -15,6 +15,9 @@ composer install laramie-cms/laramie
 Register things with Laravel:
 
 - Add the following to `config/app.php`:
+	``` php
+		...
+	```
 
 ## Requirements
 
