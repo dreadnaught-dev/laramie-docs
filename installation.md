@@ -8,16 +8,30 @@ description: How to install Laramie
 
 Laramie is magical a composer pagckage for [Laravel](https://laravel.com) that imparts amazing CMS abilities. Installing it couldn't be easier:
 
+**Install Laramie via composer:**
 ``` bash
-composer install laramie-cms/laramie
+$ composer require laramie-cms/laramie
 ```
 
-Register things with Laravel:
+**Add a couple of Laramie service providers to config/app.php:**
+``` php
+'providers' => [
+    // Other Service Providers
 
-- Add the following to `config/app.php`:
-	``` php
-		...
-	```
+    Laramie\Providers\LaramieServiceProvider::class,
+    Laramie\Providers\LaramieEventServiceProvider::class,
+],
+```
+
+**Complete the installation:**
+```
+$ php artisan vendor:publish
+# If you haven't already done so, Laramie leverages Laravel's auth, so you need to ensure that you have the necessary migrations in place:
+$ php artisan make:auth
+$ php artisan migrate
+# To authorize a user to use the admin, you must first _have_ a user. Register a user via your Laravel app, create one via a seed, etc
+$ php artisan laramie:authorize user@email.com
+```
 
 ## Requirements
 
