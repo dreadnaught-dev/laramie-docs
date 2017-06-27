@@ -20,7 +20,8 @@ But like other magic, it comes at a cost. You should probably know what that is 
 - Laramie's juju requires running postgres 9.4 or greater (for now). So if you're dropping it into an existing app, it won't work if you're on MySQL.
 - Not strictly required, but you'll likely want to access Laramie-controlled data via a Laramie service rather than Eloquent (again, Laramie is not an all-or-none proposition. Use Laramie just where it makes sense).
 
-If you can live with those things, Laramie might just be the CMS for you.
+If you can live with those things, Laramie might just be the CMS for you:
+- TODO -- list of what's provided
 
 <a name="installation"></a>
 ## Installation
