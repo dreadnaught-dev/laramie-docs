@@ -1,22 +1,40 @@
 ---
 title: Installation
 slug: installation
-description: How to install Laramie
+description: How to install Larami
 ---
 
 # Installation
 
-Laramie is magical a composer pagckage for [Laravel](https://laravel.com) that imparts amazing CMS abilities. Installing it couldn't be easier:
+- [Intro](#intro)
+- [Installation](#installation)
+- [Requirements](#requirements)
 
-**Install Laramie via composer:**
+<a name="intro"></a>
+## Intro
+
+Laramie is a magical composer package for [Laravel](https://laravel.com/) that grants your application amazing CMS abilities. Installation is totally non-destructive, so you can install it and not worry about it wrecking existing work. Drop it in and leverage it for your whole application or just parts of it.
+
+But like other magic, it comes at a cost. You should probably know what that is up front:
+- First, as it's a package _for_ Laravel, Laravel is a requirement. Easy.
+- Laramie's juju requires running postgres 9.4 or greater (for now). So if you're dropping it into an existing app, it won't work if you're on MySQL.
+- Not strictly required, but you'll likely want to access Laramie-controlled data via a Laramie service rather than Eloquent (again, Laramie is not an all-or-none proposition. Use Laramie just where it makes sense).
+
+If you can live with those things, Laramie might just be the CMS for you.
+
+<a name="installation"></a>
+## Installation
+
+Laramie is simply a composer package, so installing it couldn't be easier:
 
 ``` bash
 $ composer require laramie-cms/laramie
 ```
 
-**Add a couple of Laramie service providers to config/app.php:**
+Add a couple of Laramie service providers to config/app.php:
 
-``` php
+
+```php
 'providers' => [
     // Other Service Providers
 
@@ -25,20 +43,19 @@ $ composer require laramie-cms/laramie
 ],
 ```
 
-**Complete the installation:**
+Complete the installation:
 
 ``` bash
 $ php artisan vendor:publish
-# If you haven't already done so, Laramie leverages Laravel's auth, so you need to ensure that you have the necessary migrations in place:
 $ php artisan make:auth
 $ php artisan migrate
-# To authorize a user to use the admin, you must first _have_ a user. Register a user via your Laravel app, create one via a seed, etc
 $ php artisan laramie:authorize user@email.com
 ```
 
+<a name="requirements"></a>
 ## Requirements
 
-Laramie is an amazing CMS-granting package _for_ Laravel... so Laravel is a requirement (see [Laravel's documentation](https://laravel.docm/docs/installation) for instructions on how to install Laravel).
+Laramie is an amazing CMS-granting package _for_ Laravel... so Laravel is a requirement (see [Laravel's documentation](https://laravel.com/docs/installation) for instructions on how to install Laravel).
 
 Server requirements are minimal and are for the most part identical to [Laravel's](https://laravel.com/docs/installation#server-requirements). However, the one caveat is that Laramie's juju **requires** running postgres 9.4 or greater (for now).
 
