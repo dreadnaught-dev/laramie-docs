@@ -6,6 +6,7 @@ description: Navigation links
 
 ## Getting Started
 
+- [Introduction](/docs/{{version}}/intro)
 - [Installation](/docs/{{version}}/installation)
 - [Configuration](/docs/{{version}}/configuration)
 - [Directory Structure](/docs/{{version}}/structure)
