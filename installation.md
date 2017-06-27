@@ -8,8 +8,7 @@ description: How to install Laramie
 
 Laramie is magical a composer pagckage for [Laravel](https://laravel.com) that imparts amazing CMS abilities. Installing it couldn't be easier:
 
-``` bash
-composer install laramie-cms/laramie
+``` bash composer install laramie-cms/laramie
 ```
 
 ## Requirements
