@@ -8,6 +8,7 @@ description: Navigation links
 
 - [Introduction](/docs/{{version}}/intro)
 - [Installation](/docs/{{version}}/installation)
+- [Running with Docker](/docs/{{version}}/running-with-docker)
 - [Configuration](/docs/{{version}}/configuration)
 - [Directory Structure](/docs/{{version}}/structure)
 

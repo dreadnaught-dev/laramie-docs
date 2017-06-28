@@ -13,9 +13,9 @@ description: How to install Larami
 <a name="requirements"></a>
 ## Requirements
 
-Laramie is a composer package _for_ Laravel. So obviously Laravel is required. For Laravel's requirements and installation instructions, [see here](https://laravel.com/docs/installation). In addition to Laravel's requirements, Laramie's juju requires the following:
+Laramie is a composer package _for_ Laravel. So Laravel is requirement number one. For Laravel's requirements and installation instructions, [see here](https://laravel.com/docs/installation). In addition to Laravel's requirements, Laramie's juju depends on the following:
 
-- PostgreSQL 9.4 or greater with a user that has privileges to create database extensions (advanced privileges are only needed for the initial migration)
+- PostgreSQL 9.4 or greater with a user that has privileges to create database extensions (a user with advanced privileges is only needed for the initial migration)
 - [Laravel's authentication facilities](https://laravel.com/docs/authentication) must be enabled, and at least one user should be configured.
 
 <a name="install-laramie"></a>
@@ -44,7 +44,7 @@ Complete the installation:
 ``` bash
 php artisan vendor:publish
 php artisan migrate
-php artisan laramie:authorize user@email.com
+php artisan laramie:authorize your-registered-user@email.com
 ```
 
 Congratulations! That's all there is to it! You should now be able to visit your-site.dev/admin and start managing your content.
@@ -52,7 +52,7 @@ Congratulations! That's all there is to it! You should now be able to visit your
 <a name="kicking-tires"></a>
 ## Trying things out
 
-If you'd like to try Laramie out, [Homestead](https://laravel.com/docs/homestead) should work (although it's untested). If you have [Docker](https://docs.docker.com/engine/installation/) installed, the following `docker-compose.yml` file should get you started as well (add it to the root of the project and then run `docker-compose up`:
+If you'd like to try Laramie out, [Homestead](https://laravel.com/docs/homestead) should work (although it's untested). Alternatively, if you have [Docker](https://docs.docker.com/engine/installation/) installed, the following `docker-compose.yml` file should be enough to get you started (add it to the root of the project and then run `docker-compose up`). Note that this method is more advanced. See the page on [running with Docker](/docs/{{version}}/docker) for more details.
 
 ``` yaml
 version: '3'
