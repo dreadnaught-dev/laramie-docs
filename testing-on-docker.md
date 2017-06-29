@@ -1,10 +1,10 @@
 ---
-title: Running with Docker
-slug: running-with-docker
+title: Testing on Docker
+slug: testing-on-docker
 description: Directions on how to get Laramie running on Docker
 ---
 
-#Running with Docker
+#Testing on Docker
 
 - [Introduction](#introduction)
 - [Get Docker](#get-docker)
@@ -15,7 +15,7 @@ description: Directions on how to get Laramie running on Docker
 <a name="introduction"></a>
 ##Introduction
 
-Other options for getting started may be easier (see <a href="https://laravel.com/docs/homestead" target="_blank">Homestead</a> or <a href="https://forge.laravel.com/" target="_blank">Forge</a>), but if you already have Docker installed (or want to) and eschew installing a full-blown virtual machine just to test things out, running Laramie on Docker isn't too hard (plus you get get some hacker points).
+Other options for getting started may be easier (see <a href="https://laravel.com/docs/homestead" target="_blank">Homestead</a> or <a href="https://forge.laravel.com/" target="_blank">Forge</a>), but if you already have Docker installed (or want to) and eschew installing a full-blown virtual machine just to test things out, running Laramie on Docker isn't too hard (plus you get some hacker points).
 
 This guide assumes that you're starting out with <a href="https://laravel.com/docs/installation#installing-laravel" target="_blank">Laravel installed somewhere</a> but not actively being served. Cool? Let's get started.
 
