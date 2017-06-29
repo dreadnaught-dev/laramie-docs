@@ -44,7 +44,7 @@ Complete the installation:
 ``` bash
 php artisan vendor:publish
 php artisan migrate
-php artisan laramie:authorize your-registered-user@email.com
+php artisan laramie:authorize your-user@email.com
 ```
 
 Congratulations! That's all there is to it! You should now be able to visit your-site.dev/admin and start managing your content.
