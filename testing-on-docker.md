@@ -12,7 +12,7 @@ description: Directions on how to get Laramie running on Docker
 - [Configure your containers](#configure)
 
 
-<a name="introduction"></a>
+<a id="introduction"></a>
 ##Introduction
 
 Other options for getting started may be easier (see <a href="https://laravel.com/docs/homestead" target="_blank">Homestead</a> or <a href="https://forge.laravel.com/" target="_blank">Forge</a>), but if you already have Docker installed (or want to) and eschew installing a full-blown virtual machine just to test things out, running Laramie on Docker isn't too hard (plus you get some hacker points).
@@ -20,13 +20,13 @@ Other options for getting started may be easier (see <a href="https://laravel.co
 This guide assumes that you're starting out with <a href="https://laravel.com/docs/installation#installing-laravel" target="_blank">Laravel installed somewhere</a> but not actively being served. Cool? Let's get started.
 
 
-<a name="get-docker"></a>
+<a id="get-docker"></a>
 ##Get Docker
 
 First things first: if you don't already have it, <a href="https://www.docker.com/community-edition#/download" target="_blank">install Docker</a>. If it's already installed, wonderful!
 
 
-<a name="containers"></a>
+<a id="containers"></a>
 ##Get your containers up
 
 We're going to use a `docker-compose.yml` file to describe the environment that we'll use for running our application (don't worry, we'll go over it in a minute):
@@ -69,7 +69,7 @@ Notice that our `docker-compose.yml` file lists several containers. Here's what 
 - **web**: This container includes php and its postgres bindings. It's what's going to actually run the web application.
 - **db**: This is the PostgreSQL db server. Our web container is going to connect to it for the db.
 - **adminer**: This is a convenience application so that you can get insight into what the db looks like and run SQL queries without installing a postgres-specific db explorer (although you can). After your containers are running, simply visit `http://localhost:8081` and use the following credentials to connect to your db:
-  <a name="db-settings"></a>
+  <a id="db-settings"></a>
   ```
   System: PostgreSQL
   Server: laramie-postgres
@@ -77,7 +77,7 @@ Notice that our `docker-compose.yml` file lists several containers. Here's what 
   Password: 123
   ```
 
-<a name="configure"></a>
+<a id="configure"></a>
 ##Configure your containers
 
 We're getting close. Just a couple of things left to do:
