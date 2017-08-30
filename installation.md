@@ -17,6 +17,7 @@ Laramie is a composer package _for_ Laravel. So Laravel is requirement number on
 
 - PostgreSQL 9.4 or greater with a user that has privileges to create database extensions (a user with advanced privileges is only needed for the initial migration).
 - [Laravel's authentication facilities](https://laravel.com/docs/authentication) must be enabled, and at least one user should be configured (for the purpose of this guide, we're assuming their email is `your-user@email.com`).
+- The `gd` or `imagick` php extension(s) should be installed (for image manipulation).
 
 <a name="install-laramie"></a>
 ## Installing Laramie
