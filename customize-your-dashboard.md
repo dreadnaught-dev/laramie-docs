@@ -4,11 +4,16 @@ slug: customize-your-dashboard
 description: How to customize your generic Laramie admin dashboard
 ---
 
-# Customize your dashboard <span class="subtitle">in two easy-ish steps</span>
+# Customize your dashboard <span class="subtitle">in a few easy-ish steps</span>
 
-Customizing your dashboard is simply a matter of getting data into your dashboard and then displaying it. This page will help with that.
+First, if you don't need a dashboard at all (perhaps jumping directly to a model's list page would suffice), simply set the Laramie config pararmeter `dashboard_override` to the name of the model whose list page you'd like to use instead. Once done, that page will serve as your dashboard.
 
-## 1. Inject data into your dashboard view
+Out of the box, Laramie's dashboard is pretty generic (every application is unique, so there's only so much a canned dashboard can accomplish). If the vanilla dashboard meets your needs, awesome. If not, customizing your dashboard is easy -- it's really just a matter of getting data into your dashboard and then displaying it. This page will help with that.
+
+## 1. Modify Laramie's config
+To customize your dashboard, the first thing you need to do ensure the `dashboard_override` attribute mentioned above is empty or commented out (if you'd ever like to get back to the default dashboard, set its value back to 'vanilla').
+
+## 2. Inject data into your dashboard view
 
 To show anything dynamic, you need to get data into your application's dashboard. To do so, modify your app service provider's boot method to inject the data you need (see app/Providers/AppServiceProvider.php).
 
@@ -26,7 +31,7 @@ public function boot()
 }
 ```
 
-## 2. Lay your data out
+## 3. Lay your data out
 
 When you installed Laramie, you ran `php artisan vendor:publish`. This command copied some of Laramie's assets out to your application so that you could more easily modify them. The generic dashboard blade was copied to `resources/views/vendor/laramie/dashboard.blade.php`. This is the file you're going to modify.
 
@@ -49,7 +54,7 @@ Note that these examples were taken straight from Bulma's website (see [Bulma's 
 ```
 
 ### Card
-<div class="card">
+<div class="card" style="margin-bottom: 1.5rem">
     <header class="card-header">
         <p class="card-header-title">
             Component
