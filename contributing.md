@@ -1,9 +1,3 @@
----
-title: Contributing
-slug: contributing
-description: Notes on how to contribute to Laramie
----
-
 # Contributing
 
 Contributions are **welcome** and will be fully **credited**.

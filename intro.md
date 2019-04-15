@@ -1,10 +1,4 @@
----
-title: Introduction
-slug: intro
-description: Get acquainted with Laramie
----
-
-## Intro
+# Intro
 
 Laramie is a magical composer package for [Laravel](https://laravel.com/) that grants your application amazing CMS abilities. Installation is totally non-destructive, so you can install it and not worry about it wrecking existing work. Drop it in and leverage it for your whole application or just parts of it.
 

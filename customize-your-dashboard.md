@@ -1,9 +1,3 @@
----
-title: Customize your dashboard
-slug: customize-your-dashboard
-description: How to customize your generic Laramie admin dashboard
----
-
 # Customize your dashboard <span class="subtitle">in a few easy-ish steps</span>
 
 First, if you don't need a dashboard at all (perhaps jumping directly to a model's list page would suffice), simply set the Laramie config pararmeter `dashboard_override` to the name of the model whose list page you'd like to use instead. Once done, that page will serve as your dashboard.

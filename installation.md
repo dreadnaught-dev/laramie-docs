@@ -1,9 +1,3 @@
----
-title: Installation
-slug: installation
-description: How to install Larami
----
-
 # Installation
 
 - [Server requirements](#requirements)

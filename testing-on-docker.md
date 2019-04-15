@@ -1,9 +1,3 @@
----
-title: Testing on Docker
-slug: testing-on-docker
-description: Directions on how to get Laramie running on Docker
----
-
 #Testing on Docker
 
 - [Introduction](#introduction)
